@@ -26,3 +26,15 @@ class BaseDeDonnees implements Connectable {
     print("basededonnees : deconnexion reussie");
   }
 }
+
+void main() {
+  var srv = ServeurAPI();
+  var based_d = BaseDeDonnees();
+
+  List<Connectable> services = [srv, based_d];
+
+  for (var service in services) {
+    service.connecter("zaki");
+    service.deconnecter();
+  }
+}
