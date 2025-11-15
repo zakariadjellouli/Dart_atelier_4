@@ -14,3 +14,15 @@ class ServeurAPI implements Connectable {
     print("serveurAPI : deconnexion reussie.");
   }
 }
+
+class BaseDeDonnees implements Connectable {
+  @override
+  void connecter(String utilisateur) {
+    print("basededonnees : Connexion etablie pour $utilisateur");
+  }
+
+  @override
+  void deconnecter() {
+    print("basededonnees : deconnexion reussie");
+  }
+}
