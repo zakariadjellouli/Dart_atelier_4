@@ -27,3 +27,22 @@ void main() {
   li1.afficherInfos();
   li2.afficherInfos();
 }
+
+class Roman extends Livre {
+  String genre;
+
+  Roman(String titre, String auteur, this.genre) : super(titre, auteur);
+
+  void afficherInfosRoman() {
+    print("titre: $titre, auteur: $auteur, genre: $genre, pages: $pages");
+  }
+}
+
+void main() {
+  Roman r1 = Roman("Sherlock Holmes", "Arthur Conan Doyle", "Policier");
+
+  r1.afficherInfosRoman();
+  r2.afficherInfosRoman();
+
+  Livre.afficherTotal();
+}
