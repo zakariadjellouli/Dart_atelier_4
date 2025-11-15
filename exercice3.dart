@@ -14,3 +14,9 @@ class Compte {
     }
   }
 }
+
+void main() {
+  var compte = Compte("zaki");
+  compte.depot(100);
+  print("Solde du compte ${compte.solde}");
+}
