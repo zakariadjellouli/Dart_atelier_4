@@ -12,3 +12,13 @@ class Couleur {
     print("(R : $r, V : $g, B : $b)");
   }
 }
+
+void main() {
+  var cRouge = Couleur.rouge();
+  var cVert = Couleur.vert();
+  var cBleu = Couleur.bleu();
+
+  cRouge.afficherCouleur();
+  cVert.afficherCouleur();
+  cBleu.afficherCouleur();
+}
